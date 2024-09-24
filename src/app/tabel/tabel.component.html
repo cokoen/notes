@@ -1,0 +1,33 @@
+<body>
+  <input id="nodeInput" [(ngModel)]="input" />
+  <input
+    type="submit"
+    id="nodeInputAdd"
+    (click)="ClickEvent()"
+    [disabled]="isInEdit"
+    value="Add"
+  />
+  <button id="nodeEditAdd" (click)="EditSuccesEvent()" [hidden]="!isInEdit">
+    ✓
+  </button>
+
+  @for (item of data; track item) { @if (item.id !== '0') {
+  <div id="node">
+    {{ item.name }}
+    <button
+      class="nodeButton"
+      id="nodeDeleteButton"
+      (click)="DeleteEvent(item.id)"
+    >
+      Delete
+    </button>
+    <button
+      class="nodeButton"
+      id="nodeEditButton"
+      (click)="EditButtonEvent(item.id)"
+    >
+      Edit
+    </button>
+  </div>
+  } }
+</body>

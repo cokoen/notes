@@ -1,0 +1,37 @@
+#nodeInput {
+  width: 100%;
+}
+#nodeInput:focus {
+  outline: none;
+}
+
+#nodeInputAdd {
+  width: 100%;
+}
+
+#nodeEditAdd {
+  width: 100%;
+}
+
+#node {
+  background-color: #cfcfcf;
+  margin-top: 0.2rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+.nodeButton {
+  position: relative;
+  float: right;
+
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.nodeButton:hover {
+  color: #575757;
+  cursor: pointer;
+}
