@@ -1,0 +1,17 @@
+#coinImage {
+    width: 10%;
+    position: relative;
+    float: inline-start;
+}
+
+#coinInfos {
+    
+}
+
+#coin {
+    margin-top: 5%;
+    font-size: 9vw;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}

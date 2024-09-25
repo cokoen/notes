@@ -1,0 +1,11 @@
+<h1>Coind Prices</h1>
+
+
+<div>
+
+    @for (item of data; track data) {
+    
+        <div id="coin"><img id="coinImage" [src]="item.image"> <p id="coinInfos">{{item.name}} Current Price:    {{item.current_price}}$</p> </div>
+    }
+    
+</div>
