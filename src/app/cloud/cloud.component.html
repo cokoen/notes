@@ -1,11 +1,13 @@
-<h1>Coind Prices</h1>
+<body>
+<h1 id="header">Coin Prices</h1>
 
 
 <div>
-
-    @for (item of data; track data) {
-    
-        <div id="coin"><img id="coinImage" [src]="item.image"> <p id="coinInfos">{{item.name}} Current Price:    {{item.current_price}}$</p> </div>
+    @for (item of data; track $index) {
+        <div id="coin">
+            <img id="coinImage" [src]="item.image"> <span id="space"></span>
+            <span id="coinInfos" (click)="onClick()"> {{item.name}} Current Price: {{item.current_price | currency}}</span>
+        </div>
     }
-    
 </div>
+</body>

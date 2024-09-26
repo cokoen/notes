@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import {MatBottomSheetModule, MatBottomSheetRef, MatBottomSheet} from '@angular/material/bottom-sheet';
+import {MatListModule} from '@angular/material/list';
 
 @Component({
   selector: 'app-cloud',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [CommonModule, MatBottomSheetModule],
   templateUrl: './cloud.component.html',
   styleUrl: './cloud.component.css'
 })
@@ -20,5 +22,9 @@ export class CloudComponent implements OnInit{
       this.data = sub //JSON.stringify(sub)
       catSub.unsubscribe()
     })
+  }
+
+  onClick() {
+    
   }
 }
